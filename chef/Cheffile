@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'java'
+cookbook 'git'
+cookbook 'jenkins'
+cookbook 'emacs'
+cookbook 'vagrant'
+
+
+cookbook 'virtualbox',
+  :git => "https://github.com/jtimberman/virtualbox-cookbook",
+  :ref => "master"
+
